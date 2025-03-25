@@ -8,8 +8,63 @@ package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.13"
-streamlit = "^1.43.2"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.3.1"
+pytest-cov = "^4.1.0"
+
+[tool.poetry.scripts]
+test = "pytest"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "./app",
+  "./evaluations"
+]
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.0"
+ipykernel = "^6.29.5"
+streamlit = "^1.41.1"
+
+[tool.ruff]
+target-version = "py39"
+line-length = 88
+
+# Enable pycodestyle ('E'), Pyflakes ('F'), and import sorting ('I') and docstring checking ('D')
+lint.select = ["E", "F", "I"]
+lint.ignore = []
+
+# Allow autofix for all enabled rules (when `--fix`) is provided.
+lint.fixable = ["A", "B", "C", "D", "E", "F", "G", "I", "N", "Q", "S", "T", "W", "ANN", "ARG", "BLE", "COM", "DJ", "DTZ", "EM", "ERA", "EXE", "FBT", "ICN", "INP", "ISC", "NPY", "PD", "PGH", "PIE", "PL", "PT", "PTH", "PYI", "RET", "RSE", "RUF", "SIM", "SLF", "TCH", "TID", "TRY", "UP", "YTT"]
+lint.unfixable = []
+
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".ipynb",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+    "experiments"
+]
