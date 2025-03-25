@@ -6,6 +6,7 @@ transcripts. The goal is to provide stakeholders with a simple, efficient method
 relevant calls as they perform QA, conduct performance reviews of employees, etc.
 
 # Repository Structure
+```
 ├── .github/  # GitHub-specific files (actions, workflows, etc.)
 │   └── workflows/  # GitHub Actions workflows
 │       └── ruff.yml  # Ruff check configuration
@@ -19,6 +20,7 @@ relevant calls as they perform QA, conduct performance reviews of employees, etc
 ├── poetry.lock  # Dependencies
 ├── pyproject.toml  # Build system requirements
 └── README.md  # Project overview
+```
 
 # Environment Setup
 *This project uses a Poetry virtual environment.*
