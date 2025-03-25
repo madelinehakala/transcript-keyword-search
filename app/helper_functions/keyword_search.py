@@ -11,7 +11,7 @@ def keyword_search(data: dict, keyword: str) -> dict:
         keyword (str): Keyword to search for.
 
     Returns:
-        list: List of keys where the keyword is found in the corresponding value.
+        dict: Dictionary of key/value pairs that contain the keyword.
     """
     # Normalize the keyword by removing punctuation and spaces, and converting to lowercase
     normalized_keyword = re.sub(r'\W+', '', keyword).lower()
