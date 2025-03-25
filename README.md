@@ -1,11 +1,11 @@
 # Transcript Keyword Search App
 
-# Overview
+## Overview
 This repository houses a basic Streamlit app to perform keyword search over call center 
 transcripts. The goal is to provide stakeholders with a simple, efficient method to identify 
 relevant calls as they perform QA, conduct performance reviews of employees, etc.
 
-# Repository Structure
+## Repository Structure
 ```
 ├── .github/  # GitHub-specific files (actions, workflows, etc.)
 │   └── workflows/  # GitHub Actions workflows
@@ -22,12 +22,12 @@ relevant calls as they perform QA, conduct performance reviews of employees, etc
 └── README.md  # Project overview
 ```
 
-# Environment Setup
+## Environment Setup
 *This project uses a Poetry virtual environment.*
 
 **1. Install Poetry (if you have not already).**
 ```
-brew install poetry
+pipx install poetry==1.8.4
 ```
 
 **2. Create the virtual environment with the necessary packages and dependencies.**

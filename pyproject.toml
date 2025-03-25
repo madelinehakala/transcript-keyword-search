@@ -1,17 +1,15 @@
-[project]
+[tool.poetry]
 name = "transcript-keyword-search"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "Madeline Hakala"}
-]
+authors = ["Madeline Hakala"]
 readme = "README.md"
-requires-python = ">=3.13.2"
-dependencies = [
-    "streamlit (>=1.43.2,<2.0.0)"
-]
 package-mode = false
 
+[tool.poetry.dependencies]
+python = "^3.13"
+streamlit = "^1.43.2"
+
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
