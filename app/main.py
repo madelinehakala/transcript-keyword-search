@@ -1,3 +1,5 @@
+"""Main entrypoint for the Streamlit app."""
+
 import streamlit as st
 from demo_inputs.example_transcripts import example_transcripts
 from helper_functions.keyword_search import keyword_search

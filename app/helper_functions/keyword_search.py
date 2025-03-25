@@ -1,3 +1,5 @@
+"""Keyword search helper function."""
+
 import re
 
 def keyword_search(data: dict, keyword: str) -> list:

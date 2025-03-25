@@ -1,3 +1,5 @@
+"""Example transcripts for the demo."""
+
 example_transcripts = {
     "call_001": """Agent: Hello, thank you for calling the benefits call center. How can I assist you today?\n
     Caller: Hi, I have a question about my health insurance benefits.\nAgent: Sure, what would you like to 

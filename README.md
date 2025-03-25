@@ -25,6 +25,8 @@ relevant calls as they perform QA, conduct performance reviews of employees, etc
 ## Environment Setup
 *This project uses a Poetry virtual environment.*
 
+To set up the environment for the first time, run the following commands:
+
 **1. Install Poetry (if you have not already).**
 ```
 pipx install poetry==1.8.4
@@ -35,7 +37,30 @@ pipx install poetry==1.8.4
 poetry install
 ```
 
-**3. Initialize the environment.**
+## Running the Streamlit App
+To run the Streamlit app, run the following commands:
+
+**1. Initialize the environment.**
 ```
 poetry shell
+```
+
+**2. Move to the correct directory.**
+```
+cd app
+```
+
+**3. Run the app.**
+```
+streamlit run main.py
+```
+
+**4. Exit the app when finished.**
+```
+[Ctrl+C]
+```
+
+**5. Exit the Poetry environment.**
+```
+exit
 ```
